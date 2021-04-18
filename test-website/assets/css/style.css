@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Common */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Main */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    /* display: inline-block; */
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    line-height: 46px;
+    text-decoration: none;
+    padding: 0 24px;
+    /* color: #fff; */
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#slider {
+    /* min-height: 500px;
+    background-color: #333; */
+    position: relative;
+    margin-top: 20px;                   
+    padding-top: 46%;                   
+    background: url('/assets/img/slider/iot4.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;                        /*  1 */
+    /* left: 50%;                           2
+    transform: translateX(-50%); */
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 900;                   /* Độ dày */
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content .content-section {             /*......*/
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;        /*khoảng cách giữa các ký tự*/
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;           /*độ mờ*/
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;    /**căn đều dòng chữ*/
+    line-height: 1.4;
+}
+
+#content .list {
+    margin-top: 48px;
+}
+
+#content .item {
+    float: left;
+    /* width: 33.3333333333333333333333333%; */
+    /* width: calc(100% / 3); */
+    text-align: center;
+}
+
+#content .name {
+    font-size: 15px;
+    margin-top: 24px;
+    /* text-align: center; */
+}
+
+#content .mohinh-img {
+    width: 832px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+.component-section {
+    background-color: #000;
+}
+
+/*Places */
+
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 48px;
+} 
+
+.place-item {
+    float: left;
+    /* width: 33.33333%; */
+    width: calc(100%/4);
+    padding: 0 8px;
+} 
+
+.place-img {
+    width: 100%;
+    display: block;
+} 
+
+.place-img:hover {
+    opacity: 0.6;       /*độ mờ*/
+}
+
+.place-body {
+    padding: 16px;
+    font-size: 15px;
+    background: #fff;
+} 
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;   /*độ dày*/
+} 
+
+.place-name {
+    margin-top: 15px;
+    color: #757575;
+} 
+
+.place-description {
+    margin-top: 15px;
+    line-height: 1.4;
+} 
+
+.place-buy-btn {
+color: #fff;
+background-color: #000;
+text-decoration: none;
+padding: 11px 16px;
+display: inline-block;
+margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.end img {
+    width: 100%;
+    height: 100%;
+    margin-top: 476px;
+    /* filter: grayscale(0.4); */
+}
+
+/* --------------------------------------------------------------------------- */
+#control {
+    text-align:center;
+}
+
+.h1 {
+    color:#003399;
+}
+          
+#device .h1 {
+    margin-top: 20px;
+}
+
+#khung1-1 {
+    position: relative;
+}
+
+#khung1-2 {
+    position: absolute;
+    top: 44%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    padding: 16px;
+    width: 50%;
+    border: 24px solid #f1f1f1;
+    border-radius: 5%;
+    margin-top: 230px;
+}
+
+#khung2-1 {
+    position: relative;
+}
+
+#khung2-2 {
+    position: absolute;
+    height: 399px;
+    top: 44%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    padding: 16px;
+    width: 50%;
+    border: 24px solid #f1f1f1;
+    border-radius: 5%;
+    margin-top: 231px;
+}
+
+.bt_on {
+    height:50px; 
+    width:100px; 
+    margin:10px 0;
+    background-color:#FF6600;
+    border-radius:5px;
+}
+         
+.bt_on:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.bt_off {
+    height:50px; 
+    width:100px; 
+    margin:10px 0;
+    background-color:#00FF00;
+    border-radius:5px;
+}
+         
+.bt_off:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#connect {
+    height:30px; 
+    width:82px; 
+    margin:10px 0;
+    background-color:#b7b8d1;
+    border-radius:5px;
+}
+
+#connect:hover {
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
