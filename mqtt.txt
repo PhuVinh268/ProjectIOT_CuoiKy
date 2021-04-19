@@ -1,0 +1,48 @@
+
+d:
+cd D:\IOT\mosquitto_ios
+mosquitto_sub -h 192.168.43.18 -t chodat
+
+
+d:
+cd D:\IOT\mosquitto_ios
+mosquitto_pub -h 192.168.43.18 -m "abc" -t chodat 
+
+----------------------------------------------------------------------
+
+
+d:
+cd D:\IOT\mosquitto_ios
+D:\IOT\mosquitto_ios>mosquitto_passwd --help
+D:\IOT\mosquitto_ios>mosquitto_passwd -c Vinh abc
+D:\IOT\mosquitto_ios>mosquitto -v -c mosquitto.conf
+
+d:
+cd D:\IOT\mosquitto_ios
+D:\IOT\mosquitto_ios>mosquitto_sub -h 192.168.43.16 -t efg -u abc -P 1234
+
+d:
+cd D:\IOT\mosquitto_ios
+D:\IOT\mosquitto_ios>mosquitto_pub -h 192.168.43.16 -t efg -u abc -P 1234 -m "hfdhfj"
+
+---------------------------------------------------------------------------------------
+
+22/02/2021
+**********
+chạy StartMqttBroker.cmd trong file 'mosquitto_ios'
+mosquitto_sub -h 192.168.43.16 -t k1
+mosquitto_pub -h 192.168.43.16 -t k1 -m "xin chao ban"
+ket thuc sub: ctrl + C
+
+
+Tạo file p2.txt
+vinh:123
+mosquitto_passwd -U p2.txt
+Edit lại trong mosquitto.conf 2 dòng lệnh đầu: 
+		allow_anonymous false
+		password_file D:\mosquitto_ios\p2.txt
+Chạy StartMqttBroker.cmd
+mosquitto_sub -h 192.168.43.16 -t k1 -u vinh -P 123
+mosquitto_pub -h 192.168.43.16 -t k1 -m "xin chao ban" -u vinh -P 123
+
+dòng 13 14 29 36 37 55 72
